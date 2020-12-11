@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTocToe", "TicTocToe\TicTocToe.csproj", "{0A284201-B775-4F77-8890-528FB2772429}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CCD", "CCD", "{FEE80683-943F-4982-B24E-2A6DF9DA5333}"
+	ProjectSection(SolutionItems) = preProject
+		..\EAs\04 CCD\CCD Cheat Sheet.pdf = ..\EAs\04 CCD\CCD Cheat Sheet.pdf
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTocLib", "TicTocLib\TicTocLib.csproj", "{7B0AEBAE-FA7B-4A1F-A9ED-EB9531B528F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{B7F88844-324B-44EE-8911-C813FBF37F37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorial", "Tutorial", "{786ABA1B-D435-4086-8049-E54D259AC84A}"
+	ProjectSection(SolutionItems) = preProject
+		tutorial\Tutorial.html = tutorial\Tutorial.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EA6 Erfahrungen", "EA6 Erfahrungen", "{D534CAB3-8086-45C6-A3F5-B6FB1CB6F844}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\EA6 Advanced Buildmanagement.pdf = ..\..\..\Downloads\EA6 Advanced Buildmanagement.pdf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A284201-B775-4F77-8890-528FB2772429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A284201-B775-4F77-8890-528FB2772429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A284201-B775-4F77-8890-528FB2772429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A284201-B775-4F77-8890-528FB2772429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B0AEBAE-FA7B-4A1F-A9ED-EB9531B528F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B0AEBAE-FA7B-4A1F-A9ED-EB9531B528F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B0AEBAE-FA7B-4A1F-A9ED-EB9531B528F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B0AEBAE-FA7B-4A1F-A9ED-EB9531B528F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7F88844-324B-44EE-8911-C813FBF37F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F88844-324B-44EE-8911-C813FBF37F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAD068D5-1052-4D4E-A582-04AD66AEED85}
+	EndGlobalSection
+EndGlobal
