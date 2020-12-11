@@ -32,10 +32,10 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5 
       
       - name: Restore NuGet packages
-        run: nuget restore MyGitGubActionStarter.sln
+        run: nuget restore TicTocToeCI.sln
       
       - name: Build the Solution
-        run: msbuild MyGitGubActionStarter.sln /p:configuration=Release
+        run: msbuild TicTocToeCI.sln /p:configuration=Release
       
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.1 
