@@ -32,10 +32,10 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5 
       
       - name: Restore NuGet packages
-        run: nuget restore TicTocToeCI.sln
+        run: nuget restore TicTocToe.sln
       
       - name: Build the Solution
-        run: msbuild TicTocToeCI.sln /p:configuration=Release
+        run: msbuild TicTocToe.sln /p:configuration=Release
       
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.1 
