@@ -42,3 +42,9 @@ jobs:
         with:
           name: my-artifact
           path: ${{ github.workspace }}
+      
+      - name: Upload a Build Artifact 2
+        uses: actions/upload-artifact@v2.2.1 
+        with:
+          name: TicTocToe.exe
+          path: output/TicTocToe.exe
