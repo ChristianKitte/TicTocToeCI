@@ -35,7 +35,7 @@ jobs:
         run: nuget restore TicTocToe.sln
       
       - name: Build the Solution
-        run: msbuild TicTocToe.sln /p:configuration=Release
+        run: msbuild TicTocToe.sln /p:configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
       
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.1 
