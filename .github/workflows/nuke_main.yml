@@ -23,4 +23,4 @@ jobs:
       
       # here comes the tricky part
       - name: Build mit NUKE ausführen
-        run: ./build.cmd --target Compile
+        run: sudo ./build.cmd --target Compile
