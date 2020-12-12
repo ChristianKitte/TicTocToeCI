@@ -25,3 +25,6 @@ jobs:
       - name: Nuke Build
         shell: bash
         run: ./build.sh --target GitHubActions --verbosity verbose
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_URL: ${{ secrets.NETLIFY_URL }}
