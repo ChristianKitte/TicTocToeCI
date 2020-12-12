@@ -24,4 +24,4 @@ jobs:
       # here comes the tricky part
       - name: CI
         shell: bash
-        run: ./build.ps1
+        run: ./build.ps1 --target compile
