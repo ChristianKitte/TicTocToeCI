@@ -47,10 +47,10 @@ jobs:
         uses: actions/upload-artifact@v2.2.1 
         with:
           name: TicTocToe.exe
-          path: ./output/TicTocToe.exe
+          #path: ./output/TicTocToe.exe
           
       - name: Upload a Build Artifact 3
         uses: actions/upload-artifact@v2.2.1 
         with:
           name: TicTocToe.dll
-          path: output
+      #    path: output
