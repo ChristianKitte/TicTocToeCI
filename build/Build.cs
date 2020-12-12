@@ -20,9 +20,10 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 [GitHubActions("ci",
     GitHubActionsImage.UbuntuLatest,
     AutoGenerate = true,
-    OnPushBranches = new[] { "master" },
-    OnPullRequestBranches = new[] { "master" },
-    InvokedTargets = new[] { nameof(GitHubActions) })]
+    OnPushBranches = new[] {"master"},
+    OnPullRequestBranches = new[] {"master"},
+    InvokedTargets = new[] {nameof(GitHubActions)},
+    ImportSecrets = new[] {"NETLIFY_TOKEN", "NETLIFY_URL"})]
 class Build : NukeBuild
 {
     /// Support plugins are available for:
