@@ -22,9 +22,6 @@ jobs:
           dotnet-version: 3.1.x
       
       # here comes the tricky part
-      - name: Nuke Build
+      - name: CI
         shell: bash
-        run: ./build.sh --target GitHubActions --verbosity verbose
-        env:
-          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
-          NETLIFY_URL: ${{ secrets.NETLIFY_URL }}
+        run: ./build.sh
