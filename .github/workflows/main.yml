@@ -53,4 +53,4 @@ jobs:
         uses: actions/upload-artifact@v2.2.1 
         with:
           name: TicTocToe.dll
-          path: ./output/TicTocToe.dll
+          path: output
