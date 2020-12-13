@@ -24,4 +24,4 @@ jobs:
       # here comes the tricky part
       - name: Build mit NUKE ausführen
         run: 
-          sudo bash ${GITHUB_WORKSPACE}/build.sh --target Compile
+          sudo bash ${GITHUB_WORKSPACE}/build.sh --target Deploy
