@@ -23,4 +23,5 @@ jobs:
       
       # here comes the tricky part
       - name: Build mit NUKE ausführen
-        run: "sudo ${GITHUB_WORKSPACE}/build.sh --target Compile"
+        run: |
+        sudo "${GITHUB_WORKSPACE}/build.sh --target Compile"
