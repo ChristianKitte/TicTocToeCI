@@ -22,7 +22,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
     AutoGenerate = true,
     OnPushBranches = new[] {"master"},
     OnPullRequestBranches = new[] {"master"},
-    InvokedTargets = new[] {nameof(GitHubActions)},
+    InvokedTargets = new[] {nameof("Compile")},
     ImportSecrets = new[] {"NETLIFY_TOKEN", "NETLIFY_URL"})]
 class Build : NukeBuild
 {
