@@ -47,4 +47,4 @@ jobs:
         uses: actions/upload-artifact@v2.2.1 
         with:
           name: test
-          path: D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\obj\Release\net5.0\TicTocToe.dll" to "D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\net5.0\
+          path: D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\obj\Release\net3.1\
