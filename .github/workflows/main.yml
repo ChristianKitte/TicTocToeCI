@@ -46,11 +46,5 @@ jobs:
       - name: Upload a Build Artifact 2
         uses: actions/upload-artifact@v2.2.1 
         with:
-          name: TicTocToe.exe
-          #path: ./output/TicTocToe.exe
-          
-      - name: Upload a Build Artifact 3
-        uses: actions/upload-artifact@v2.2.1 
-        with:
-          name: TicTocToe.dll
-      #    path: output
+          name: test
+          path: D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\obj\Release\net5.0\TicTocToe.dll" to "D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\net5.0\
