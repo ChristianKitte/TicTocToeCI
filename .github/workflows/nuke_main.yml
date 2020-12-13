@@ -1,6 +1,6 @@
 # Workflow to use NUKE with GitHubActions
 # credits to https://rodneylittlesii.com/posts/topic/building-github-actions-with-nuke
-name: Build Action
+name: Build with NUKE
 
 # only branch master on push and pull requests
 on:
