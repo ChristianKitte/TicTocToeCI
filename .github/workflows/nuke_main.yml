@@ -21,12 +21,6 @@ jobs:
         with:
           dotnet-version: 3.1.x
       
-      - name: Update NET with 5.0
-        run: |
-          sudo bash dotnet tool update -g dotnet-vs
-          sudo bash vs install preview -sku:enterprise --quiet +Microsoft.VisualStudio.Component.ManagedDesktop.Core +Microsoft.NetCore.Component.DevelopmentTools
-          sudo bash echo "##vso[task.prependpath]$(vs where preview --prop=InstallationPath)\MSBuild\Current\Bin"
-      
       # here comes the tricky part
       - name: Build mit NUKE ausführen
         run: 
