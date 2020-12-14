@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build with MSBuild
 
 # Controls when the action will run. 
 on:
@@ -37,10 +37,10 @@ jobs:
       - name: Build the Solution
         run: msbuild TicTocToe.sln /p:configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
       
-      - name: Upload a Build Artifact
+      - name: Upload a Build Artifact by MSBuild
         uses: actions/upload-artifact@v2.2.1 
         with:
-          name: Repository BackUp
+          name: Repository BackUp by MSBuild
           path: ${{ github.workspace }}
       
       - name: collect artifacts
@@ -57,5 +57,5 @@ jobs:
       - name: Upload a Build Artifact 2
         uses: actions/upload-artifact@v2.2.1 
         with:
-          name: Release
+          name: Release by MSBuild
           path: D:\a\TicTocToeCI\TicTocToeCI\Artifacts
