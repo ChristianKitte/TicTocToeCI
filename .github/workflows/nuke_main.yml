@@ -24,4 +24,28 @@ jobs:
       # here comes the tricky part
       - name: Build mit NUKE ausführen
         run: 
-          sudo bash ${GITHUB_WORKSPACE}/build.sh --target Deploy
+          sudo bash ${GITHUB_WORKSPACE}/build.sh --target Compile      
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.1 
+        with:
+          name: Repository BackUp by NUKE
+          path: ${{ github.workspace }}
+      
+      # this is more simple then do this by NUKE itselfs
+      - name: collect artifacts
+        run: |
+          mkdir D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\Autofac.dll D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\Autofac.dll
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocLib.dll D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocLib.dll
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.dll
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll.config D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.dll.config
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.exe D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.exe
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.runtimeconfig.json D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.runtimeconfig.json            
+          cp D:\a\TicTocToeCI\TicTocToeCI\tutorial\Tutorial.html D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\Tutorial.html
+            
+      - name: Upload a Build Artifact 2
+        uses: actions/upload-artifact@v2.2.1 
+        with:
+          name: Release by NUKE
+          path: D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE
