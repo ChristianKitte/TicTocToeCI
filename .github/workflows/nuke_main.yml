@@ -36,13 +36,13 @@ jobs:
       - name: collect artifacts
         run: |
           sudo mkdir /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/Autofac.dll /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/Autofac.dll
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocLib.dll /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/TicTocLib.dll
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.dll /home/runner/work/TicTocToeCI/TicTocToeCI//ArtifactsNUKE/TicTocToe.dll
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.dll.config /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/TicTocToe.dll.config
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.exe /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/TicTocToe.exe
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.runtimeconfig.json /home/runner/work/TicTocToeCI/ArtifactsNUKE/TicTocToe.runtimeconfig.json            
-          cp /home/runner/work/TicTocToeCI/TicTocToeCI/tutorial/Tutorial.html /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/Tutorial.html
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/Autofac.dll /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/Autofac.dll
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocLib.dll /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/TicTocLib.dll
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.dll /home/runner/work/TicTocToeCI/TicTocToeCI//ArtifactsNUKE/TicTocToe.dll
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.dll.config /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/TicTocToe.dll.config
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.exe /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/TicTocToe.exe
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocToe/bin/Release/netcoreapp3.1/TicTocToe.runtimeconfig.json /home/runner/work/TicTocToeCI/ArtifactsNUKE/TicTocToe.runtimeconfig.json            
+          sudo cp /home/runner/work/TicTocToeCI/TicTocToeCI/tutorial/Tutorial.html /home/runner/work/TicTocToeCI/TicTocToeCI/ArtifactsNUKE/Tutorial.html
             
       - name: Upload a Build Artifact 2
         uses: actions/upload-artifact@v2.2.1 
