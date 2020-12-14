@@ -43,8 +43,13 @@ jobs:
           name: my-artifact
           path: ${{ github.workspace }}
       
+      - name: collect artifacts
+        run: |
+          mkdir D:\a\TicTocToeCI\TicTocToeCI\Artifacts
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\Autofac.dll D:\a\TicTocToeCI\TicTocToeCI\Artifacts            
+            
       - name: Upload a Build Artifact 2
         uses: actions/upload-artifact@v2.2.1 
         with:
           name: test
-          path: D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\
+          path: D:\a\TicTocToeCI\TicTocToeCI\Artifacts
