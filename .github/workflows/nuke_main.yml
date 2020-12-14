@@ -35,7 +35,7 @@ jobs:
       # this is more simple then do this by NUKE itselfs
       - name: collect artifacts
         run: |
-          mkdir /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/ArtifactsNUKE
+          sudo mkdir /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/ArtifactsNUKE
           cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/Autofac.dll /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/ArtifactsNUKE/Autofac.dll
           cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/TicTocLib.dll /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/ArtifactsNUKE/TicTocLib.dll
           cp /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/TicTocToe.dll /home/runner/work/TicTocToeCI/TicTocToeCI/TicTocLib/bin/Release/netcoreapp3.1/ArtifactsNUKE/TicTocToe.dll
