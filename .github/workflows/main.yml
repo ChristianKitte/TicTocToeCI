@@ -46,13 +46,13 @@ jobs:
       - name: collect artifacts
         run: |
           mkdir D:\a\TicTocToeCI\TicTocToeCI\Artifacts
-          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\Autofac.dll D:\a\TicTocToeCI\TicTocToeCI\Autofac.dll
-          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocLib.dll D:\a\TicTocToeCI\TicTocToeCI\TicTocLib.dll
-          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll D:\a\TicTocToeCI\TicTocToeCI\TicTocToe.dll
-          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll.config D:\a\TicTocToeCI\TicTocToeCI\TicTocToe.dll.config
-          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.exe D:\a\TicTocToeCI\TicTocToeCI\TicTocToe.exe
-          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.runtimeconfig.json D:\a\TicTocToeCI\TicTocToeCI\TicTocToe.runtimeconfig.json            
-          cp D:\a\TicTocToeCI\TicTocToeCI\tutorial\Tutorial.html D:\a\TicTocToeCI\TicTocToeCI\Tutorial.html
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\Autofac.dll D:\a\TicTocToeCI\TicTocToeCI\Artifacts\Autofac.dll
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocLib.dll D:\a\TicTocToeCI\TicTocToeCI\Artifacts\TicTocLib.dll
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll D:\a\TicTocToeCI\TicTocToeCI\Artifacts\TicTocToe.dll
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll.config D:\a\TicTocToeCI\TicTocToeCI\Artifacts\TicTocToe.dll.config
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.exe D:\a\TicTocToeCI\TicTocToeCI\Artifacts\TicTocToe.exe
+          cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.runtimeconfig.json D:\a\TicTocToeCI\TicTocToeCI\Artifacts\TicTocToe.runtimeconfig.json            
+          cp D:\a\TicTocToeCI\TicTocToeCI\tutorial\Tutorial.html D:\a\TicTocToeCI\TicTocToeCI\Artifacts\Tutorial.html
             
       - name: Upload a Build Artifact 2
         uses: actions/upload-artifact@v2.2.1 
