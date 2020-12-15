@@ -13,6 +13,7 @@ Einsendeaufgabe Continuous Integration
 ## Lösung Continuous Integration
 
 ![Build with MSBuild](https://github.com/ChristianKitte/TicTocToeCI/workflows/Build%20with%20MSBuild/badge.svg)
+
 ![Build with NUKE](https://github.com/ChristianKitte/TicTocToeCI/workflows/Build%20with%20NUKE/badge.svg)
 
 
