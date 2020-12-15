@@ -2,15 +2,19 @@
 
 Verfahren und Werkzeuge moderner Softwareentwicklug
 Wintersemester 20/21
-Einsendeaufgabe Buildmanagement
+Einsendeaufgabe Continuous Integration
 
-## Aufgabe Buildmanagement
+## Aufgabe Continuous Integration
 
- - Beschäftigung mit einem Tool für das Buildmanagement 
- - Erstellen und Ausführen eines Workflows für eine Beispielanwendung
+ - Beschäftigung mit einer Lösung für Continuous Integration 
+ - Einen Workflow für Continuous Integration Erstellen und am laufen kriegen
  - Dokumentation der Beschäftigung und Umsetzung
 
-## Lösung Buildmanagement
+## Lösung Continuous Integration
+
+![Build with MSBuild](https://github.com/ChristianKitte/TicTocToeCI/workflows/Build%20with%20MSBuild/badge.svg)
+
+
 
 Im Rahmen der Bearbeitung habe ich mich mit dem "cross-platform build automation system" NUKE (https://nuke.build/) auseinander gesetzt. Die Einzelheiten meines Vorgehen finden sich in der Datei [EA6 Advanced Buildmanagement.pdf](https://github.com/ChristianKitte/TicTocToeBuildMgm/blob/master/EA6%20Advanced%20Buildmanagement.pdf).
 
