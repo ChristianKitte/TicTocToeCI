@@ -42,7 +42,7 @@ jobs:
           cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.dll.config D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.dll.config
           cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.exe D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.exe
           cp D:\a\TicTocToeCI\TicTocToeCI\TicTocToe\bin\Release\netcoreapp3.1\TicTocToe.runtimeconfig.json D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\TicTocToe.runtimeconfig.json            
-          cp D:\a\TicTocToeCI\TicTocToeCI\tutorial\Tutorial.html D:\a\TicTocToeCI\TicTocToeCI\Artifacts\Tutorial.html
+          cp D:\a\TicTocToeCI\TicTocToeCI\tutorial\Tutorial.html D:\a\TicTocToeCI\TicTocToeCI\ArtifactsNUKE\Tutorial.html
             
       - name: Upload a Build Artifact 2
         uses: actions/upload-artifact@v2.2.1 
