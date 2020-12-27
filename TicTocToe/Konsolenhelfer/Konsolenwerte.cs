@@ -80,7 +80,7 @@ namespace TicTocToe.Konsolenhelfer
         /// </summary>
         public String begrüssungstext1
         {
-            get { return "Lass uns eine coole Partie TikTakToe spielen!"; }
+            get { return "Lass uns eine coole Partie TikTakToe zocken!"; }
         }
 
         /// <summary>
