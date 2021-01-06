@@ -16,6 +16,7 @@ Einsendeaufgabe Continuous Integration
 
 ![Build with NUKE](https://github.com/ChristianKitte/TicTocToeCI/workflows/Build%20with%20NUKE/badge.svg)
 
+![Build Status](https://advancedsoftwaretechnik.beta.teamcity.com/app/rest/builds/buildType:id:TicTocToeCI_Build/statusIcon)
 
 Im Rahmen der Bearbeitung habe ich mich mit GitHub Actions auseinander gesetzt. Die Einzelheiten meines Vorgehen finden sich in der Datei [EA7 Continuous Integration.pdf](https://github.com/ChristianKitte/TicTocToeCI/blob/master/EA7%20Continuous%20Integration.pdf).
 
